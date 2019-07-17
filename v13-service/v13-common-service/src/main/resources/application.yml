@@ -1,0 +1,26 @@
+dubbo:
+  application:
+    name: common-service
+  registry:
+    protocol: zookeeper
+    address: 192.168.231.129:2181
+  protocol:
+    port: 28813
+
+spring:
+  mail:
+    host: smtp.163.com
+    username: yrg71n9@163.com
+    password: Yrg19970916
+    default-encoding: UTF-8
+  rabbitmq:
+    host: 192.168.231.129
+    port: 5672
+    virtual-host: /yrg
+    username: yrg
+    password: 123
+mail:
+  fromAddr: yrg71n9@163.com
+
+server:
+  port: 8084

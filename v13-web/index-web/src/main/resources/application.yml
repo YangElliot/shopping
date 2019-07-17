@@ -1,0 +1,14 @@
+
+server:
+  port: 9091
+
+spring:
+  thymeleaf:
+    cache: false
+
+dubbo:
+  application:
+    name: index-web
+  registry:
+    protocol: zookeeper
+    address: 192.168.231.129:2181

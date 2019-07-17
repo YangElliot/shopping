@@ -1,0 +1,24 @@
+dubbo:
+  application:
+    name: register-web
+  registry:
+    protocol: zookeeper
+    address: 192.168.231.129:2181
+server:
+  port: 9094
+spring:
+  thymeleaf:
+    cache: false
+  rabbitmq:
+    host: 192.168.231.129
+    port: 5672
+    virtual-host: /yrg
+    username: yrg
+    password: 123
+  redis:
+    host: 192.168.231.129
+    port: 6379
+    password: 123
+    jedis:
+      pool:
+        max-active: 66
